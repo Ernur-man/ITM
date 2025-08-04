@@ -1,0 +1,110 @@
+@import '../../../reset.less';
+
+.contact{
+    width: 100%;
+    height: 100svh;
+    background: #0E6466;
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 30px;
+        h2{
+            .txt;
+            display: inline;
+            background: white;
+            color: black;
+            font-size: 50px;
+        }
+        article{
+            margin-top: 30px;
+            .flex_between;
+            text-align: left;
+            align-items: flex-start;
+            aside{
+                width: 500px;
+                &:nth-child(1){
+                    width:  600px;
+                }
+                &:nth-child(2){
+                    p{
+                        .txt;
+                    }
+                    .esp{
+                        margin-bottom: 30px;
+                        &:nth-child(2){
+                            margin-top: 30px;
+                        }
+                        &:nth-child(4){
+                            margin-top: 8px;
+                        }
+                    }
+                    h4{
+                        .txt;
+                        font-size: 24px;
+                        border-bottom: 1px solid white;
+                        padding-bottom: 20px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            h3{
+                .txt;
+                font-size: 40px;
+                border-bottom: 1px solid white;
+                padding-bottom: 30px;
+            }
+            form{
+                width: 100%;
+                margin-top: 30px;
+                position: relative;
+                input, textarea, button{
+                    width: 100%;
+                    border: none;
+                    margin-bottom: 30px;
+                    padding: 16px;
+                    resize: none;
+                    outline: none;
+                    background: #BCFBFD;
+                    .txt;
+                    color: #333D3E;
+                }
+                button{
+                    margin: 0;
+                    background: white;
+                    border-bottom: 4px solid rgb(203, 202, 202);
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                }
+                textarea{
+                    height: 140px;
+                }
+            }
+        }
+    }
+}
+
+.nameInp, .mailInp{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    .txt;
+    color: #333D3E;
+    transition: 0.3s;
+}
+.mailInp{
+    top: 100px;
+}
+.active_name, .active_mail{
+    position: absolute;
+    top: 6px;
+    left: 16px;
+    color: gray;
+    border: 0 !important;
+    font-size: 12px;
+    transition: 0.4s;
+}
+
+.active_mail{
+    top: 90px;
+}
