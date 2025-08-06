@@ -9,6 +9,9 @@ header{
         margin: 0 auto;
         .flex_between;
         color: white;
+        img{
+            width: 250px;
+        }
         menu{
             width: 400px;
             .flex_between;
@@ -22,4 +25,30 @@ header{
     transition: 0.3s;
     padding-bottom: 5px;
     border-bottom: 2px solid #157F81;
+}
+
+
+@media (max-width: 800px){
+    header{
+        .container{
+            width: 90%;
+            img{
+                width: 150px;
+            }
+            menu{
+                display: none;
+            }
+            .nav-bar{
+                position: absolute;
+                top: 0;
+                right: 20px;
+                nav{
+                    width: 30px;
+                    height: 10px;
+                    background: white;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
 }

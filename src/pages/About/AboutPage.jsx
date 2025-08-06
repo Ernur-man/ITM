@@ -4,7 +4,6 @@ import FirstBlock from "./blocks/FirstBlock";
 export default function AboutPage(){
     return(
         <>
-            <Header/>
             <FirstBlock/>
         </>
     )

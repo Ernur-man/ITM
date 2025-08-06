@@ -5,13 +5,11 @@ export default function FirstBlock(){
     return(
         <>
             
-            <main className="first">
-                
-                <Header/>
+            <main className="main-first-block">
                 <div className="container">
                     <article>
-                        <span>STRATEGY.HEIGHT.<br/><p>SUCCESS.</p></span>
-                        <button><Link to="/contact">Contact Us</Link></button>
+                        <span>STRATEGY.<p>HEIGHT.</p><br/><p>SUCCESS.</p></span>
+                        <button><Link to="/CONTACT">Contact Us</Link></button>
                     </article>
                 </div>
             </main>
